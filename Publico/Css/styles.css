@@ -1,0 +1,75 @@
+/* Estilo para el box-sizing de todos los elementos */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+  background: #efefbb; /* Fondo degradado */
+  background: linear-gradient(to right, #d4d3dd, #efefbb); /* Fondo degradado lineal */
+  font-family: 'Lato', sans-serif; /* Fuente de texto */
+  display: flex; /* Mostrar elementos como flexbox */
+  flex-direction: column; /* Dirección de los elementos flex */
+  align-items: center; /* Alineación horizontal */
+  justify-content: center; /* Alineación vertical */
+  margin: 0; /* Eliminar márgenes */
+}
+
+/* Estilos para el título principal */
+h1 {
+  letter-spacing: 3px; /* Espaciado entre letras */
+}
+
+/* Estilos para el contenedor de los Pokémon */
+.Contenedor-pokemons {
+  display: flex; /* Mostrar elementos como flexbox */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+  align-items: space-between; /* Alineación de los elementos */
+  justify-content: center; /* Alineación de los elementos */
+  margin: 0 auto; /* Margen automático horizontal */
+  max-width: 1200px; /* Ancho máximo */
+}
+
+/* Estilos para cada carta de Pokémon */
+.pokemon {
+  background-color: #eee; /* Color de fondo */
+  border-radius: 10px; /* Radio de borde */
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5); /* Sombra */
+  margin: 10px; /* Margen externo */
+  padding: 20px; /* Relleno interno */
+  text-align: center; /* Alineación de texto */
+}
+
+/* Estilos para el contenedor de la imagen del Pokémon */
+.pokemon .img-container {
+  background-color: rgba(255, 255, 255, 0.6); /* Color de fondo semi-transparente */
+  border-radius: 50%; /* Radio de borde circular */
+  width: 120px; /* Ancho */
+  height: 120px; /* Altura */
+  text-align: center; /* Alineación de texto */
+}
+
+/* Estilos para la imagen del Pokémon */
+.pokemon .img-container img {
+  max-width: 90%; /* Ancho máximo */
+  margin-top: 20px; /* Margen superior */
+}
+
+/* Estilos para la información del Pokémon */
+.pokemon .info {
+  margin-top: 20px; /* Margen superior */
+}
+
+/* Estilos para el número del Pokémon */
+.pokemon .info .number {
+  background-color: rgba(0, 0, 0, 0.1); /* Color de fondo semi-transparente */
+  padding: 5px 10px; /* Relleno interno */
+  border-radius: 10px; /* Radio de borde */
+  font-size: 0.8em; /* Tamaño de fuente */
+}
+
+/* Estilos para el nombre del Pokémon */
+.pokemon .info .name {
+  margin: 15px 0 7px; /* Margen */
+  letter-spacing: 1px; /* Espaciado entre letras */
+}
